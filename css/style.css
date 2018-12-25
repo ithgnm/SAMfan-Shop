@@ -37,10 +37,6 @@ main {
 	color: white;
 	flex-shrink: 0;
 }
-.table>tbody>tr>td,
-.table>tfoot>tr>td {
-  vertical-align: middle;
-}
 .cart {
 	margin-top: 30px;
 	font-size: 90%;
@@ -74,4 +70,37 @@ main {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+  vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+  table#cart tbody td .form-control {
+    width: 20%;
+    display: inline !important;
+  }
 
+  table#cart thead {
+    display: none;
+  }
+  table#cart tbody td {
+    display: block;
+    padding: .6rem;
+    min-width: 320px;
+  }
+  table#cart tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+  }
+  table#cart tfoot td {
+    display: block;
+  }
+  table#cart tfoot td .btn {
+    display: block;
+  }
+  img {
+
+  }
+}
