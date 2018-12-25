@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>SAMfan Shop - Cart</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<a class="navbar-brand" href="../index.html"><b>SAMfan Shop</b></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Phones</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Galaxy Note series</a>
+								<a class="dropdown-item" href="#">Galaxy S series</a>
+								<a class="dropdown-item" href="#">Galaxy A series</a>								
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Tablets</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Galaxy Tab series</a>
+								<a class="dropdown-item" href="#">Galaxy Book</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Wearables</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Galaxy Watch</a>
+								<a class="dropdown-item" href="#">Galaxy Gear IconX</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Audio</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Earbuds</a>
+								<a class="dropdown-item" href="#">Headphones</a>
+								<a class="dropdown-item" href="#">Portable Speakers</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#">Accessories</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="account.html">Account</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="cart.html">Cart</a>
+						</li>
+						<li class="nav-item dropdown">
+							<div class="btn-group"><a class="nav-link" href="#" role="button" data-toggle="dropdown">Login</a></button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<form class="px-4 py-3">
+										<div class="form-group">
+											<label for="login-email">Email address</label>
+											<input type="email" id="login-email" class="form-control" placeholder="email@example.com">
+										</div>
+										<div class="form-group">
+											<label for="login-password">Password</label>
+											<input type="password" id="login-password" class="form-control" placeholder="Password">
+										</div>
+										<button type="submit" class="btn btn-secondary" style="margin-top: 10px">Sign in</button>
+									</form>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="register.html"><em>Dont have an account? Register</em></a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<main>
+			<div class="container cart">
+				<table id="cart" class="table table-hover table-condensed">
+					<thead>
+						<tr>
+							<th style="width:50%">Product</th>
+							<th style="width:10%">Price</th>
+							<th style="width:8%">Quantity</th>
+							<th style="width:22%" class="text-center">Subtotal</th>
+							<th style="width:10%"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="../image/cart/cart-1.jpg" class="img-responsive" /></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Galaxy Book</h4>
+										<p>Samsung Galaxy Book 10.6” Windows 2-in-1 PC (Wi-Fi) Silver, 4GB RAM/128GB storage, SM-W620NZKAXAR.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">$999.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">$999.99</td>
+							<td class="actions" data-th="">
+								<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</td>
+						</tr>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="../image/cart/cart-2.jpg" class="img-responsive" /></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Galaxy Note8</h4>
+										<p>Samsung SM-N950UZVAXAA Galaxy Note8 (US Version) Factory Unlocked Phone - 6.3" Screen - 64GB - Orchid Gray.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">$729.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">$729.99</td>
+							<td class="actions" data-th="">
+								<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</td>
+						</tr>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="../image/cart/cart-3.jpg" class="img-responsive" /></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Gear S3 Frontier</h4>
+										<p>Samsung Gear S3 Frontier Smartwatch (Bluetooth), SM-R760NDAAXAR – US Version with Warranty.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">$199.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">$199.99</td>
+							<td class="actions" data-th="">
+								<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</td>
+						</tr>
+						<tr>
+							<td data-th="Product">
+								<div class="row">
+									<div class="col-sm-2 hidden-xs"><img src="../image/cart/cart-4.jpg" class="img-responsive" /></div>
+									<div class="col-sm-10">
+										<h4 class="nomargin">Gear IconX</h4>
+										<p>Samsung Gear IconX (2018 Edition) Bluetooth Cord-free Fitness Earbuds, w/ On-board 4Gb MP3 Player - Black.</p>
+									</div>
+								</div>
+							</td>
+							<td data-th="Price">$179.99</td>
+							<td data-th="Quantity">
+								<input type="number" class="form-control text-center" value="1">
+							</td>
+							<td data-th="Subtotal" class="text-center">$179.99</td>
+							<td class="actions" data-th="">
+								<button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							</td>
+						</tr>
+						</tbody>
+					<tfoot>
+						<tr class="visible-xs">
+							<td class="text-center"><strong>Total $2109.96</strong></td>
+						</tr>
+						<tr>
+							<td><a href="#" class="btn btn-secondary"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+							<td colspan="2" class="hidden-xs"></td>
+							<td class="hidden-xs text-center"><strong>Total $2109.96</strong></td>
+							<td><a href="#" class="btn btn-primary btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</main>
+		
+		<footer class="page-footer font-small copyright">
+			<div class="footer-copyright text-center py-3 bg-dark">© 2019 Copyright: <a href="https://www.facebook.com/ithgnm">Huy Nguyen Minh</a></div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>SAMfan Shop - Account</title>
+		<link rel="stylesheet" href="../css/style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<a class="navbar-brand" href="../index.html"><b>SAMfan Shop</b></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Phones</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Galaxy Note series</a>
+								<a class="dropdown-item" href="#">Galaxy S series</a>
+								<a class="dropdown-item" href="#">Galaxy A series</a>								
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Tablets</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Galaxy Tab series</a>
+								<a class="dropdown-item" href="#">Galaxy Book</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Wearables</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Galaxy Watch</a>
+								<a class="dropdown-item" href="#">Galaxy Gear IconX</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Audio</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Earbuds</a>
+								<a class="dropdown-item" href="#">Headphones</a>
+								<a class="dropdown-item" href="#">Portable Speakers</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#">Accessories</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="account.html">Account</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="cart.html">Cart</a>
+						</li>
+						<li class="nav-item dropdown">
+							<div class="btn-group"><a class="nav-link" href="#" role="button" data-toggle="dropdown">Login</a></button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<form class="px-4 py-3">
+										<div class="form-group">
+											<label for="login-email">Email address</label>
+											<input type="email" id="login-email" class="form-control" placeholder="email@example.com">
+										</div>
+										<div class="form-group">
+											<label for="login-password">Password</label>
+											<input type="password" id="login-password" class="form-control" placeholder="Password">
+										</div>
+										<button type="submit" class="btn btn-secondary" style="margin-top: 10px">Sign in</button>
+									</form>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="register.html"><em>Dont have an account? Register</em></a>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<main>
+		<div class="container account-info">
+			<div class="row">
+				<div class="col-12">
+					<div class="card">
+						<div class="card-body">
+							<div class="card-title mb-4">
+								<div class="d-flex justify-content-start">
+									<div class="image-container">
+										<img src="../image/account/avatar.jpg" id="imgProfile" style="width: 150px; height: 150px" class="img-thumbnail" />
+										<div class="middle">
+											<input type="button" class="btn btn-secondary" id="btnChangePicture" value="Change" />
+											<input type="file" style="display: none;" id="profilePicture" name="file" />
+										</div>
+									</div>
+									<div class="userData ml-3">
+										<h2 class="d-block" style="font-size: 1.5rem; font-weight: bold"><a href="account.html">Huy Nguyen Minh</a></h2>
+										<h6 class="d-block"><a href="#">5</a> Order Success</h6>
+										<h6 class="d-block"><a href="#">0</a> Order Cancelled</h6>
+									</div>
+									<div class="ml-auto">
+										<input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="basicInfo-tab" data-toggle="tab" href="#basicInfo" role="tab" aria-controls="basicInfo" aria-selected="true">Basic Info</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">My Reviews</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="cart.html">My Cart</a>
+										</li>
+									</ul>
+									<div class="tab-content ml-1" id="myTabContent">
+										<div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+											<div class="row">
+												<div class="col-sm-3 col-md-2 col-5">
+													<label style="font-weight:bold;">Full Name</label>
+												</div>
+												<div class="col-md-8 col-6">Huy Nguyen Minh</div>
+											</div>
+											<hr/>
+											<div class="row">
+												<div class="col-sm-3 col-md-2 col-5">
+													<label style="font-weight:bold;">Gender</label>
+												</div>
+												<div class="col-md-8 col-6">Male</div>
+											</div>
+											<hr/>	
+											<div class="row">
+												<div class="col-sm-3 col-md-2 col-5">
+													<label style="font-weight:bold;">Email</label>
+												</div>
+												<div class="col-md-8 col-6">huynm17@uef.edu.vn</div>
+											</div>
+											<hr/>
+											<div class="row">
+												<div class="col-sm-3 col-md-2 col-5">
+													<label style="font-weight:bold;">Address</label>
+												</div>
+												<div class="col-md-8 col-6">276 Dien Bien Phu, Ward 17, Binh Thanh District, HCM City</div>
+											</div>
+											<hr/>
+											<div class="row">
+												<div class="col-sm-3 col-md-2 col-5">
+													<label style="font-weight:bold;">City</label>
+												</div>
+												<div class="col-md-8 col-6">Vietnam</div>
+											</div>
+											<hr/>
+										</div>
+										<div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+											Your reviews will appear here!
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</main>
+		<footer class="page-footer font-small copyright">
+			<div class="footer-copyright text-center py-3 bg-dark">© 2019 Copyright: <a href="https://www.facebook.com/ithgnm">Huy Nguyen Minh</a></div>
+		</footer>
+	</body>
+</html>
