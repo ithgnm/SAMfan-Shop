@@ -98,6 +98,9 @@ main {
     display: block;
   }
   table#cart tfoot td .btn {
-    display: block;
+    display: block;	
+  }
+  table#cart .subtotal {
+	  display: none;
   }
 }
