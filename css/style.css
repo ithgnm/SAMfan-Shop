@@ -3,13 +3,15 @@ img {
 }
 h3 {
 	text-align: center;
+}
+.h3-index {
+	padding-top: 20px;
+}
+.reg-title {
 	padding-bottom: 10px;
 }
 .dropdown:hover>.dropdown-menu {
-	display: block;
-}
-.dropdown>.dropdown-toggle:active {
-	pointer-events: none;
+	display: block !important;
 }
 main {
 	margin-top: 50px;
@@ -41,6 +43,10 @@ main {
 }
 .cart {
 	margin-top: 30px;
+	font-size: 90%;
+}
+.nomargin {
+	font-size: 130%;
 }
 .close {
 	margin-right: 40px;
