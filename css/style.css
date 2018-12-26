@@ -74,33 +74,10 @@ main {
 .table>tfoot>tr>td {
   vertical-align: middle;
 }
-@media screen and (max-width: 600px) {
-  table#cart tbody td .form-control {
-    width: 20%;
-    display: inline !important;
-  }
-
-  table#cart thead {
-    display: none;
-  }
-  table#cart tbody td {
-    display: block;
-    padding: .6rem;
-    min-width: 320px;
-  }
-  table#cart tbody td:before {
-    content: attr(data-th);
-    font-weight: bold;
-    display: inline-block;
-    width: 8rem;
-  }
-  table#cart tfoot td {
-    display: block;
-  }
-  table#cart tfoot td .btn {
-    display: block;	
-  }
-  table#cart .subtotal {
-	  display: none;
-  }
+.table img {
+	width: 100px;
 }
+.tab-info a:link, .tab-info a:visited, .tab-info a:focus, .tab-info a:hover, .tab-info a:active {
+	color: #6c757d;
+}
+

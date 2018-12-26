@@ -87,23 +87,25 @@
 		
 		<main>
 			<div class="container cart">
-				<table id="cart" class="table table-hover table-condensed">
+				<table id="cart" class="table table-hover table-responsive">
 					<thead>
 						<tr>
-							<th style="width:50%">Product</th>
-							<th style="width:10%">Price</th>
-							<th style="width:5%" class="text-center">Quantity</th>
-							<th style="width:15%" class="text-center">Subtotal</th>
+							<th scope="col" style="width:50%">Product</th>
+							<th scope="col" style="width:10%">Price</th>
+							<th scope="col" style="width:5%" class="text-center">Quantity</th>
+							<th scope="col" style="width:15%" class="text-center">Subtotal</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td data-th="Product">
-								<div class="row">
-									<div class="col-sm-2"><img src="../image/cart/cart-1.jpg" class="img-responsive" /></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Galaxy Book</h4>
-										<p>Samsung Galaxy Book 10.6” Windows 2-in-1 PC (Wi-Fi) Silver, 4GB RAM/128GB storage, SM-W620NZKAXAR.</p>
+								<div scope="row" class="row">
+									<div class="col-2 d-lg-block d-none"><img src="../image/cart/cart-1.jpg" class="img-reponsive"></div>
+									<div class="col">
+										<h4>Galaxy Book</h4>
+										<p class="d-sm-block d-none">Samsung Galaxy Book 10.6” Windows 2-in-1 PC (Wi-Fi) Silver, 4GB RAM/128GB storage, SM-W620NZKAXAR.</p>
+										<p class="tab-info d-sm-none"><a data-toggle="collapse" href="#info-1">Information</a></p>
+										<div class="collapse" id="info-1">Samsung Galaxy Book 10.6” Windows 2-in-1 PC (Wi-Fi) Silver, 4GB RAM/128GB storage, SM-W620NZKAXAR.</div>
 									</div>
 								</div>
 							</td>
@@ -111,15 +113,17 @@
 							<td data-th="Quantity">
 								<input type="number" class="form-control text-center" value="1">
 							</td>
-							<td data-th="Subtotal" class="subtotal text-center">$999.99</td>
+							<td data-th="Subtotal" class="text-center">$999.99</td>
 						</tr>
 						<tr>
 							<td data-th="Product">
-								<div class="row">
-									<div class="col-sm-2"><img src="../image/cart/cart-2.jpg" class="img-responsive" /></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Galaxy Note8</h4>
-										<p>Samsung SM-N950UZVAXAA Galaxy Note8 (US Version) Factory Unlocked Phone - 6.3" Screen - 64GB - Orchid Gray.</p>
+								<div scope="row" class="row">
+									<div class="col-2 d-lg-block d-none"><img src="../image/cart/cart-2.jpg" class="img-reponsive"></div>
+									<div class="col">
+										<h4>Galaxy Note8</h4>
+										<p class="d-sm-block d-none">Samsung SM-N950UZVAXAA Galaxy Note8 (US Version) Factory Unlocked Phone - 6.3" Screen - 64GB - Orchid Gray.</p>
+										<p class="tab-info d-sm-none"><a data-toggle="collapse" href="#info-2">Information</a></p>
+										<div class="collapse" id="info-2">Samsung SM-N950UZVAXAA Galaxy Note8 (US Version) Factory Unlocked Phone - 6.3" Screen - 64GB - Orchid Gray.</div>
 									</div>
 								</div>
 							</td>
@@ -127,15 +131,17 @@
 							<td data-th="Quantity">
 								<input type="number" class="form-control text-center" value="1">
 							</td>
-							<td data-th="Subtotal" class="subtotal text-center">$729.99</td>
+							<td data-th="Subtotal" class="text-center">$729.99</td>
 						</tr>
 						<tr>
 							<td data-th="Product">
-								<div class="row">
-									<div class="col-sm-2"><img src="../image/cart/cart-3.jpg" class="img-responsive" /></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Gear S3 Frontier</h4>
-										<p>Samsung Gear S3 Frontier Smartwatch (Bluetooth), SM-R760NDAAXAR – US Version with Warranty.</p>
+								<div scope="row" class="row">
+									<div class="col-2 d-lg-block d-none"><img src="../image/cart/cart-3.jpg" class="img-reponsive"></div>
+									<div class="col">
+										<h4>Gear S3 Frontier</h4>
+										<p class="d-sm-block d-none">Samsung Gear S3 Frontier Smartwatch (Bluetooth), SM-R760NDAAXAR – US Version with Warranty.</p>
+										<p class="tab-info d-sm-none"><a data-toggle="collapse" href="#info-3">Information</a></p>
+										<div class="collapse" id="info-3">Samsung Gear S3 Frontier Smartwatch (Bluetooth), SM-R760NDAAXAR – US Version with Warranty.</div>
 									</div>
 								</div>
 							</td>
@@ -143,15 +149,17 @@
 							<td data-th="Quantity">
 								<input type="number" class="form-control text-center" value="1">
 							</td>
-							<td data-th="Subtotal" class="subtotal text-center">$199.99</td>
+							<td data-th="Subtotal" class="text-center">$199.99</td>
 						</tr>
 						<tr>
 							<td data-th="Product">
-								<div class="row">
-									<div class="col-sm-2"><img src="../image/cart/cart-4.jpg" class="img-responsive" /></div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">Gear IconX</h4>
-										<p>Samsung Gear IconX (2018 Edition) Bluetooth Cord-free Fitness Earbuds, On-board 4Gb MP3 Player - Black.</p>
+								<div scope="row" class="row">
+									<div class="col-2 d-lg-block d-none"><img src="../image/cart/cart-4.jpg" class="img-reponsive"></div>
+									<div class="col">
+										<h4>Gear IconX</h4>
+										<p class="d-sm-block d-none">Samsung Gear IconX (2018 Edition) Bluetooth Cord-free Fitness Earbuds, On-board 4Gb MP3 Player - Black.</p>
+										<p class="tab-info d-sm-none"><a data-toggle="collapse" href="#info-4">Information</a></p>
+										<div class="collapse" id="info-4">Samsung Gear IconX (2018 Edition) Bluetooth Cord-free Fitness Earbuds, On-board 4Gb MP3 Player - Black.</div>
 									</div>
 								</div>
 							</td>
@@ -159,10 +167,10 @@
 							<td data-th="Quantity">
 								<input type="number" class="form-control text-center" value="1">
 							</td>
-							<td data-th="Subtotal" class="subtotal text-center">$179.99</td>
-							
+							<td data-th="Subtotal" class="text-center">$179.99</td>
 						</tr>
-						</tbody>
+					</tbody>	
+						
 					<tfoot>
 						<tr>
 							<td colspan="2"></td>
