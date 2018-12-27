@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>SAMfan Shop - Cart</title>
-		<link rel="stylesheet" href="../css/style.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+		<title>Cart - SAMfan Shop</title>
+		<link rel="shortcut icon" href="../samfan.ico">
 	</head>
 	
 	<body>
@@ -21,29 +21,29 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Phones</a>
+							<a class="nav-link" href="../device/phone.html">Phones</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Galaxy Note series</a>
-								<a class="dropdown-item" href="#">Galaxy S series</a>
-								<a class="dropdown-item" href="#">Galaxy A series</a>								
+								<a class="dropdown-item" href="../device/phone.html#note">Galaxy Note series</a>
+								<a class="dropdown-item" href="../device/phone.html#s">Galaxy S series</a>
+								<a class="dropdown-item" href="../device/phone.html#a">Galaxy A series</a>								
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Tablets</a>
+							<a class="nav-link" href="#">Tablets</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="#">Galaxy Tab series</a>
 								<a class="dropdown-item" href="#">Galaxy Book</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Wearables</a>
+							<a class="nav-link" href="#">Wearables</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="#">Galaxy Watch</a>
 								<a class="dropdown-item" href="#">Galaxy Gear IconX</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#" role="button" data-toggle="dropdown">Audio</a>
+							<a class="nav-link" href="#">Audio</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="#">Earbuds</a>
 								<a class="dropdown-item" href="#">Headphones</a>
@@ -67,13 +67,19 @@
 									<form class="px-4 py-3">
 										<div class="form-group">
 											<label for="login-email">Email address</label>
-											<input type="email" id="login-email" class="form-control" placeholder="email@example.com">
+											<input type="email" id="login-email" class="form-control" placeholder="email@example.com" required autofocus>
 										</div>
 										<div class="form-group">
 											<label for="login-password">Password</label>
-											<input type="password" id="login-password" class="form-control" placeholder="Password">
+											<input type="password" id="login-password" class="form-control" placeholder="Password" required>
 										</div>
-										<button type="submit" class="btn btn-secondary" style="margin-top: 10px">Sign in</button>
+										<div class="form-group form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1">
+											<label class="form-check-label" for="exampleCheck1">Remember me</label>
+										</div>
+										<div class="text-center">
+											<button type="submit" class="btn btn-secondary">Sign in</button>
+										</div>
 									</form>
 									<div class="dropdown-divider"></div>
 									<a class="dropdown-item" href="register.html"><em>Dont have an account? Register</em></a>
@@ -185,5 +191,9 @@
 		<footer class="page-footer font-small copyright">
 			<div class="footer-copyright text-center py-3 bg-dark">© 2019 Copyright: <a href="https://www.facebook.com/ithgnm">Huy Nguyen Minh</a></div>
 		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	</body>
 </html>

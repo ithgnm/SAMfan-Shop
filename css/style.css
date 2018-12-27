@@ -78,6 +78,26 @@ main {
 	width: 100px;
 }
 .tab-info a:link, .tab-info a:visited, .tab-info a:focus, .tab-info a:hover, .tab-info a:active {
+	text-decoration: none;
 	color: #6c757d;
+}
+.signup {
+	width: 200px;
+}
+.device-info {
+	margin-top: 30px;
+}
+.card-price {
+	color: red;
+}
+.device-info img {
+	margin: 0 auto;
+	width: 80%;
+}
+ul {
+	list-style: none;
+}
+.card {
+	margin-bottom: 20px;
 }
 
