@@ -6,6 +6,7 @@
 		
 		<link rel="stylesheet" href="../css/style.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	
 		<title>Phones - SAMfan Shop</title>
 		<link rel="shortcut icon" href="../samfan.ico">
@@ -13,7 +14,7 @@
 	
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 				<a class="navbar-brand" href="../index.html"><b>SAMfan Shop</b></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
 					<span class="navbar-toggler-icon"></span>
@@ -21,18 +22,18 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="../device/phone.html">Phones</a>
+							<a class="nav-link" href="phone.html">Phones</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../device/phone.html#note">Galaxy Note series</a>
-								<a class="dropdown-item" href="../device/phone.html#s">Galaxy S series</a>
-								<a class="dropdown-item" href="../device/phone.html#a">Galaxy A series</a>								
+								<a class="dropdown-item" href="phone.html#note">Galaxy Note series</a>
+								<a class="dropdown-item" href="phone.html#s">Galaxy S series</a>
+								<a class="dropdown-item" href="phone.html#a">Galaxy A series</a>								
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link" href="#">Tablets</a>
+							<a class="nav-link" href="tablet.html">Tablets</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Galaxy Tab series</a>
-								<a class="dropdown-item" href="#">Galaxy Book</a>
+								<a class="dropdown-item" href="tablet.html#tab">Galaxy Tab series</a>
+								<a class="dropdown-item" href="tablet.html#book">Galaxy Book</a>
 							</div>
 						</li>
 						<li class="nav-item dropdown">
@@ -61,30 +62,32 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link" href="../account/cart.html">Cart</a>
 						</li>
-						<li class="nav-item dropdown">
-							<div class="btn-group"><a class="nav-link" href="#" role="button" data-toggle="dropdown">Login</a></button>
-								<div class="dropdown-menu dropdown-menu-right">
-									<form class="px-4 py-3">
-										<div class="form-group">
-											<label for="login-email">Email address</label>
-											<input type="email" id="login-email" class="form-control" placeholder="email@example.com" required autofocus>
-										</div>
-										<div class="form-group">
-											<label for="login-password">Password</label>
-											<input type="password" id="login-password" class="form-control" placeholder="Password" required>
-										</div>
-										<div class="form-group form-check">
-											<input type="checkbox" class="form-check-input" id="exampleCheck1">
-											<label class="form-check-label" for="exampleCheck1">Remember me</label>
-										</div>
-										<div class="text-center">
-											<button type="submit" class="btn btn-secondary">Sign in</button>
-										</div>
-									</form>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="../account/register.html"><em>Dont have an account? Register</em></a>
-								</div>
-							</div>
+						<li class="nav-item dropdown d-md-flex d-none">
+							<a class="nav-link" href="../account/login.html">Login</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<form class="px-4 py-3">
+									<div class="form-group">
+										<label for="login-email">Email address</label>
+										<input type="email" id="login-email" class="form-control" placeholder="email@example.com" required autofocus>
+									</div>
+									<div class="form-group">
+										<label for="login-password">Password</label>
+										<input type="password" id="login-password" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="form-group form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Remember me</label>
+									</div>
+									<div class="text-center">
+										<button type="submit" class="btn btn-secondary">Sign in</button>
+									</div>
+								</form>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="../account/register.html"><em>Dont have an account? Register</em></a>
+							</div>	
+						</li>
+						<li class="nav-item dropdown d-md-none">
+							<a class="nav-link" href="../account/login.html">Login</a>
 						</li>
 					</ul>
 				</div>
@@ -330,8 +333,52 @@
 			</div>
 		</main>
 		
-		<footer class="page-footer font-small copyright">
-			<div class="footer-copyright text-center py-2 bg-dark">© 2019 Copyright: <a href="https://www.facebook.com/ithgnm">Huy Nguyen Minh</a></div>
+		<footer class="page-footer font-small pt-3 bg-dark information">
+			<div class="container">
+				<div class="row text-center text-md-left">
+					<div class="col-12 col-md-4 col-lg-5 col-xl-6">
+						<h5>Information</h5>
+						<div>Final project using bootstrap 4.</div>
+						<div>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<h5>Profile</h5>
+						<ul class="list-unstyled quick-links">
+							<li>
+								<i class="fas fa-user-alt"></i>Huy Nguyen Minh
+							</li>
+							<li>
+								<i class="fas fa-fingerprint"></i>175050002
+							</li>
+							<li>
+								<i class="fas fa-graduation-cap"></i>17D1TH01
+							</li>
+							<li>
+								<i class="fas fa-envelope"></i>huynm17@gmail.com
+							</li>
+							<li>
+								<i class="fas fa-phone"></i>0786.768.769
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-5 col-lg-4 col-xl-3">
+						<h5 class="d-md-flex d-none">Contact</h5>
+						<ul class="list-unstyled list-inline social text-center">
+							<hr/ class="d-md-flex d-none">
+							<li class="list-inline-item"><a href="https://www.facebook.com/ithgnm"><i class="fab fa-facebook-square"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/ithgnm"><i class="fab fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="mailto:huynm17@uef.edu.vn"><i class="fas fa-envelope"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.uef.edu.vn"><i class="fas fa-school"></i></a></li>
+							<hr/ class="d-md-flex d-none">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<footer class="page-footer font-small copyright" style="background-color: #202325">
+			<div class="footer-copyright text-center py-2">© 2019 Copyright:</em> <strong style="color: white">Huy Nguyen Minh</strong></div>
 		</footer>
 		
 		<script src="../js/script.js"></script>
