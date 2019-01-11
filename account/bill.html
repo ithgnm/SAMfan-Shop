@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+		<title>Bill - SAMfan Shop</title>
+		<link rel="shortcut icon" href="../samfan.ico">
+	</head>
+	
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+				<a class="navbar-brand" href="../index.html"><b>SAMfan Shop</b></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="../device/phone.html">Phones</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="../device/phone.html#note">Galaxy Note series</a>
+								<a class="dropdown-item" href="../device/phone.html#s">Galaxy S series</a>
+								<a class="dropdown-item" href="../device/phone.html#a">Galaxy A series</a>								
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="../device/tablet.html">Tablets</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="../device/tablet.html#tab">Galaxy Tab series</a>
+								<a class="dropdown-item" href="../device/tablet.html#book">Galaxy Book</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#">Wearables</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Galaxy Watch</a>
+								<a class="dropdown-item" href="#">Galaxy Gear IconX</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#">Audio</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Earbuds</a>
+								<a class="dropdown-item" href="#">Headphones</a>
+								<a class="dropdown-item" href="#">Portable Speakers</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="#">Accessories</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="account.html">Account</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" href="cart.html">Cart</a>
+						</li>
+						<li class="nav-item dropdown d-md-flex d-none">
+							<a class="nav-link" href="login.html">Login</a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<form class="px-4 py-3">
+									<div class="form-group">
+										<label for="login-email">Email address</label>
+										<input type="email" id="login-email" class="form-control" placeholder="email@example.com" required autofocus>
+									</div>
+									<div class="form-group">
+										<label for="login-password">Password</label>
+										<input type="password" id="login-password" class="form-control" placeholder="Password" required>
+									</div>
+									<div class="form-group form-check">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Remember me</label>
+									</div>
+									<div class="text-center">
+										<button type="submit" class="btn btn-secondary">Sign in</button>
+									</div>
+								</form>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="register.html"><em>Dont have an account? Register</em></a>
+							</div>	
+						</li>
+						<li class="nav-item dropdown d-md-none">
+							<a class="nav-link" href="login.html">Login</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		
+		<main>	
+			<div class="container py-5">
+				<div class="card">
+					<div class="card-header">
+						Invoice <b><em>11.01.2019</em></b>
+						<span class="float-right"> <strong>Status:</strong> Pending</span>
+					</div>
+					<div class="card-body">
+						<div class="row mb-4">
+							<div class="col-sm-6">
+								<h6 class="mt-1"><em>From:</em></h6>
+								<div><strong>SAMfan Shop</strong></div>
+								<div>276 Dien Bien Phu</div>
+								<div>HCM City, Vietnam</div>
+								<div>Email: samfan@cf.com</div>
+							</div>
+							<div class="col-sm-6">
+								<h6 class="mt-1"><em>To:</em></h6>
+								<div><strong>Huy Nguyen Minh</strong></div>
+								<div>107/116 Quang Trung, Go Vap</div>
+								<div>Email: huynm17@uef.edu.vn</div>
+								<div>Phone: 0786 768 769</div>
+							</div>
+						</div>
+						<div class="table-responsive-sm">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th class="center">#</th>
+										<th>Item</th>
+										<th>Description</th>
+										<th class="right">Unit Cost</th>
+										<th class="center">Qty</th>
+										<th class="right">Total</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="center">1</td>
+										<td class="left strong">Galaxy Book</td>
+										<td class="left">New, SM-W620NZKAXAR.</td>
+										<td class="right">$999.99</td>
+										<td class="center">1</td>
+										<td class="right">$999.00</td>
+									</tr>
+									<tr>
+										<td class="center">2</td>
+										<td class="left">Galaxy Note8</td>
+										<td class="left">New, SM-N950UZVAXAA.</td>
+										<td class="right">$729.99</td>
+										<td class="center">1</td>
+										<td class="right">$729.99</td>
+									</tr>
+									<tr>
+										<td class="center">3</td>
+										<td class="left">Gear S3 Frontier</td>
+										<td class="left">New, SM-R760NDAAXAR.</td>
+										<td class="right">$199.99</td>
+										<td class="center">1</td>
+										<td class="right">$199.99</td>
+									</tr>
+									<tr>
+										<td class="center">4</td>
+										<td class="left">Gear IconX</td>
+										<td class="left">New, 2018 version.</td>
+										<td class="right">$179.99</td>
+										<td class="center">1</td>
+										<td class="right">$$179.99</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="row">
+						<div class="col-lg-4 col-sm-5"></div>
+						<div class="col-lg-4 col-sm-5 ml-auto">
+							<table class="table table-clear">
+								<tbody>
+									<tr>
+										<td class="left">
+											<strong>Subtotal</strong>
+										</td>
+										<td class="right">$2109.96</td>
+									</tr>
+									<tr>
+										<td class="left">
+											<strong>Discount (10%)</strong>
+										</td>
+										<td class="right">$1793.466</td>
+									</tr>
+									<tr>
+										<td class="left">
+											<strong>VAT (10%)</strong>
+										</td>
+										<td class="right">$210.996</td>
+									</tr>
+									<tr>
+										<td class="left">
+											<strong>Total</strong>
+										</td>
+										<td class="right">
+											<strong>$2004.462</strong>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="row text-right">
+						<div class="col-10"></div>
+						<div class="col"><a href="cart.html" class="btn btn-primary btn-block">Back to cart</a></div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<footer class="page-footer font-small pt-3 bg-dark information">
+			<div class="container">
+				<div class="row text-center text-md-left">
+					<div class="col-12 col-md-4 col-lg-5 col-xl-6">
+						<h5>Information</h5>
+						<div>Final project using bootstrap 4.</div>
+						<div>Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.</div>
+					</div>
+					<div class="col-12 col-md-3">
+						<h5>Profile</h5>
+						<ul class="list-unstyled quick-links">
+							<li>
+								<i class="fas fa-user-alt"></i>Huy Nguyen Minh
+							</li>
+							<li>
+								<i class="fas fa-fingerprint"></i>175050002
+							</li>
+							<li>
+								<i class="fas fa-graduation-cap"></i>17D1TH01
+							</li>
+							<li>
+								<i class="fas fa-envelope"></i>huynm17@gmail.com
+							</li>
+							<li>
+								<i class="fas fa-phone"></i>0786.768.769
+							</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-5 col-lg-4 col-xl-3">
+						<h5 class="d-md-flex d-none">Contact</h5>
+						<ul class="list-unstyled list-inline social text-center">
+							<hr/ class="d-md-flex d-none">
+							<li class="list-inline-item"><a href="https://www.facebook.com/ithgnm"><i class="fab fa-facebook-square"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/ithgnm"><i class="fab fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="mailto:huynm17@uef.edu.vn"><i class="fas fa-envelope"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.uef.edu.vn"><i class="fas fa-school"></i></a></li>
+							<hr/ class="d-md-flex d-none">
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<footer class="page-footer font-small copyright" style="background-color: #202325">
+			<div class="footer-copyright text-center py-2">© 2019 Copyright:</em> <strong style="color: white">Huy Nguyen Minh</strong></div>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
