@@ -161,3 +161,29 @@ ul.quick-links i {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+  margin-bottom: 10px;
+}
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+.news-column h4 {
+    font-size: 1.3em;
+    color: #000;
+    padding: 0.8em 0 0.3em;
+    margin: 0;
+}
+.news-column p {
+    color: #777;
+    display: block;
+    font-size: 1em;
+}
+.news-column img {
+	margin: 30px auto;
+}
+.news-column:hover {
+    background-color: #f8f9fa;
+}
