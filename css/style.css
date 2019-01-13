@@ -184,3 +184,18 @@ ul.quick-links i {
 .news-column:hover {
     background-color: #f8f9fa;
 }
+.product_view .modal-dialog {
+	max-width: 800px; 
+	width: 100%;
+}
+.pre-cost {
+	text-decoration: line-through;
+	color: #a5a5a5;
+}
+.space-ten {
+	padding: 10px 0;
+}
+.btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
