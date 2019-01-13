@@ -75,7 +75,7 @@ main {
 }
 .table>tbody>tr>td,
 .table>tfoot>tr>td {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 .table img {
 	width: 100px;
@@ -152,20 +152,20 @@ ul.quick-links i {
 	padding-right: 1.3em;
 }
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .btn-google {
-  color: white;
-  background-color: #ea4335;
-  margin-bottom: 10px;
+	color: white;
+	background-color: #ea4335;
+	margin-bottom: 10px;
 }
 .btn-facebook {
-  color: white;
-  background-color: #3b5998;
+	color: white;
+	background-color: #3b5998;
 }
 .news-column h4 {
     font-size: 1.3em;
@@ -196,6 +196,6 @@ ul.quick-links i {
 	padding: 10px 0;
 }
 .btn:focus, .btn:active, button:focus, button:active {
-  outline: none !important;
-  box-shadow: none !important;
+	outline: none !important;
+	box-shadow: none !important;
 }
