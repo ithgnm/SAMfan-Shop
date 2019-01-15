@@ -11,7 +11,7 @@ h3 {
 .dropdown:hover>.dropdown-menu {
 	display: block !important;
 }
-main {
+main:not(.ind) {
 	margin-top: 50px;
 }
 .reg-form {
@@ -198,4 +198,15 @@ ul.quick-links i {
 .btn:focus, .btn:active, button:focus, button:active {
 	outline: none !important;
 	box-shadow: none !important;
+}
+.view {
+    background: url(../image/index/samsung.jpg) black no-repeat center center;
+    background-size: cover;
+    height: 100px;
+}
+nav {
+    transition: 0.5s;
+}
+#nav-index {
+	background-color: black;
 }
